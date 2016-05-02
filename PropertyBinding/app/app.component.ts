@@ -1,14 +1,13 @@
-import { Componet } from 'angular2/core'
+//our root app component
+import {Component} from 'angular2/core'
 
-
-@Compoent({
-	selector: 'my-app',
-	templateUrl: 'app/app.component.html'
+@Component({
+  selector: 'my-app',
+  templateUrl: 'app/app.component.html'
 })
-
-export class AppComponent{
-	title: 'Angular 2 property binding';
-	book: 'Book 1';
-	imagePath: 'app/images.png';
-	link: 'http://angular.io';
+export class AppComponent {
+  title = 'Angular 2 Property Binding';
+  book = 'Book';
+  imagePath = 'app/images.png';
+  link = "http://angular.io"
 }

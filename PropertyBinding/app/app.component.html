@@ -1,3 +1,14 @@
 <div>
-	<h3>{{title}}</h3>
+  <h3>{{title}}</h3>
+
+  <div>
+    Book: <input [(ngModel)]="book">
+  </div>
+
+  <div [style.visibility]="book ? 'visible': 'hidden'">
+    <img [src]="imagePath">
+    <br/>
+    <a [href]="link">{{book}}</a>
+  </div>
+  
 </div>

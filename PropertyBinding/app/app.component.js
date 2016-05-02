@@ -20,13 +20,15 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.book = { id: 1, name: 'Book 1' };
-                    this.color = 'red';
+                    this.title = 'Angular 2 Property Binding';
+                    this.book = 'Book';
+                    this.imagePath = 'app/images.png';
+                    this.link = "http://angular.io";
                 }
                 AppComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-book',
-                        template: "\n\t\t\t<h1>Book Store</h1>\n\t\t\t<p>Displaying Data - Define Three types of data binding.</p>\n\t\t\t<span>Interpolation --- </span><h3> {{book.name}}</h3> <!-- Data Binding (Called Interpolation)  -->\n\t\t\t<span>Property Binding--- </span><h3 [innerText]= \"book.name\"></h3> <!-- Data Binding (Called property binding) -->\n\t\t\t<span>Event Binding --- </span><div [style.color]=\"color\">{{book.name}}</div> <!-- Data Binding (Called event binding) -->\n\t\t"
+                        selector: 'my-app',
+                        templateUrl: 'app/app.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
