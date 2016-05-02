@@ -1,0 +1,16 @@
+<div>
+	<h3>{{title}}</h3>
+
+	<div>
+		2 way Binding
+		<input [(ngModel)]="book.name">
+	</div>
+
+	<p>{{book.name}}</p>
+
+	<div>
+		1 way Binding
+
+		<input [value]="book.name">
+	</div>
+</div>

@@ -11,4 +11,3 @@ export class BooksComponent {
     { id: 3, name: 'Book 3' }
   ];
 }
-
