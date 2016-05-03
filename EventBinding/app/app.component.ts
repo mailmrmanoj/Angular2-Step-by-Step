@@ -9,6 +9,7 @@ import { Component } from 'angular2/core';
 export class AppComponent {
 	title: string;
 	messages: string[] = [];
+	imagePath = 'app/images.png'
 
 	constructor(){
 		this.title = "Angular 2 Binding Events"

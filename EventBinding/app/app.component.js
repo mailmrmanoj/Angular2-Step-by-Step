@@ -21,6 +21,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             AppComponent = (function () {
                 function AppComponent() {
                     this.messages = [];
+                    this.imagePath = 'app/images.png';
                     this.title = "Angular 2 Binding Events";
                 }
                 AppComponent.prototype.log = function (msg, data) {
