@@ -1,4 +1,4 @@
-System.register(['angular2/core', './hero.model'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,36 +10,28 @@ System.register(['angular2/core', './hero.model'], function(exports_1, context_1
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, hero_model_1;
-    var HeroComponent;
+    var core_1;
+    var testComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (hero_model_1_1) {
-                hero_model_1 = hero_model_1_1;
             }],
         execute: function() {
-            HeroComponent = (function () {
-                function HeroComponent() {
+            testComponent = (function () {
+                function testComponent() {
+                    this.title = 'Hello';
                 }
-                HeroComponent.prototype.ngOnInit = function () { };
-                __decorate([
-                    core_1.Input(), 
-                    __metadata('design:type', hero_model_1.Hero)
-                ], HeroComponent.prototype, "hero", void 0);
-                HeroComponent = __decorate([
+                testComponent = __decorate([
                     core_1.Component({
-                        selector: 'toh-hero',
-                        templateUrl: 'app/heroes/hero.component.html'
+                        template: "<h1>{{title}}</h1>",
                     }), 
                     __metadata('design:paramtypes', [])
-                ], HeroComponent);
-                return HeroComponent;
+                ], testComponent);
+                return testComponent;
             }());
-            exports_1("HeroComponent", HeroComponent);
+            exports_1("testComponent", testComponent);
         }
     }
 });
-//# sourceMappingURL=hero.component.js.map
+//# sourceMappingURL=test.component.js.map

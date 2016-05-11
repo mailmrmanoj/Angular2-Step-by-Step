@@ -1,4 +1,4 @@
-import { Component, Input } from 'angular2/core';
+import { Component, Input, OnInit} from 'angular2/core';
 
 import { Hero } from './hero.model';
 
@@ -7,7 +7,9 @@ import { Hero } from './hero.model';
 	templateUrl: 'app/heroes/hero.component.html'
 })
 
-export class HeroComponent{
+export class HeroComponent implements OnInit{
 	@Input() hero: Hero;
+
+	ngOnInit() {}
 
 }

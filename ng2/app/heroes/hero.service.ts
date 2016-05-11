@@ -6,7 +6,7 @@ export class HeroService {
 	constructor(private http: Http) { }
 
 	getHeroes(){
-		return this.http.get('http://localhost:2000/getclientlist')
+		return this.http.get('app/heroes.json')
 			.map((res:Response) => res.json());
 		// return[
 		// 	{ 'id': 11, 'name': 'Afroza Yasmin' },
@@ -16,4 +16,5 @@ export class HeroService {
 		// 	{ 'id': 15, 'name': 'Afroza Yasmin' }
 		// ];
 	}
+
 }

@@ -27,7 +27,7 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/add/operator/map'], fun
                     this.http = http;
                 }
                 HeroService.prototype.getHeroes = function () {
-                    return this.http.get('http://localhost:2000/getclientlist')
+                    return this.http.get('app/heroes.json')
                         .map(function (res) { return res.json(); });
                     // return[
                     // 	{ 'id': 11, 'name': 'Afroza Yasmin' },
